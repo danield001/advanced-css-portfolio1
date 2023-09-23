@@ -1,0 +1,218 @@
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    align-items: center;
+    padding: auto;
+    color: white;
+    padding-right: 15px;
+    padding-top: 23px; 
+
+
+
+}
+
+.hero-img{
+    background-image: url(backgroundimg.jpeg);
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 150px;
+    
+}
+
+.hero-text{
+    text-align: right;
+    padding-top: 5%;
+    position: relative;
+    padding-right: 5%;
+    color: white;
+}
+
+
+
+a {
+    padding: 10px;
+}
+
+p{
+    font-size: larger;
+}
+
+.title {
+    display: inline-block;
+    padding-left: 100px;
+    background-color: blue;
+    padding-right: 10px;
+}
+
+h2{
+    padding-left: 50px;
+    margin-right: 5px black solid;
+    text-align: right;
+
+}
+
+header{
+    width: 100%;
+    display: inline-block;
+    background-color: grey;
+    color: lightblue;
+    font-size: 150%;
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+
+
+h2{
+    display: inline;
+}
+
+p{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+.work-container{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar-work{
+    width: 25vw;
+    border-right: lightseagreen 5px solid; 
+    text-align: end;
+    padding: 20px;
+}
+
+.main-work{
+    width: 75vw;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.img-caption{
+    position: relative;
+}
+
+.top-image{
+    display: block;
+    width: 72.8%;
+    margin-top: 10px;
+
+    
+}
+
+.secondary-img{
+    display: inline;
+    width: 35%;
+    height: 140px;
+    object-fit: cover;
+}
+
+img{
+    margin: 5px;
+    border: lightblue 5px solid;
+}
+
+.about-container{
+    display: flex;
+    padding-top: 20px;
+}
+.sidebar-about{
+
+    width: 25vw;
+    border-right: lightseagreen 5px solid; 
+    text-align: end;
+    padding: 20px;
+}
+.main-about{
+    width: 75vw;
+    padding: 20px;
+}
+.contact-container{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.sidebar-contact{
+    width: 23vw;
+    border-right: lightseagreen 5px solid; 
+    text-align: end;
+    padding: 20px;
+}
+
+.contact-main{
+    width: 25vw;
+}
+
+a, h1, p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+img:hover{
+    filter: brightness(50%);
+}
+
+h1{
+    font-size: 200%;
+}
+
+footer{
+    background-color: gray;
+    width: 100%;
+    height: 70px;
+}
+
+@media screen and (max-width: 1040px) {
+    header{
+        display: block;
+        height: 200px;
+    }
+    nav{
+        float: left;
+        padding-top: 5px;
+    }
+} 
+
+@media screen and (max-width: 715px) {
+    .sidebar-about, .sidebar-contact, .sidebar-work{
+        width: 70vw;
+        display: block;
+        background-color: lightblue;
+        margin-left: 10px;
+    }
+
+    .contact-container, .about-container, .work-container{
+        display: block;
+
+    }
+
+    .main-about, .main-contact, .main-work{
+        width: 70vw;
+    }
+}
